@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+    padding: 0 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space {
+    justify-content: space-between;
+}
+
+.page-header {
+    padding: 20px 15px;
+}
+
+.food-image {
+    width: 95px;
+    background-position: center;
+    height: 79px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.food-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.food-type {
+    width: 30px;
+}
+
+.food-details {
+    width: 80%;
+}
+
+.food-calories {
+    width: 13%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.mb-10 {
+    margin-bottom: 10pt;
+}
+
+.bb-light-grey {
+    border-bottom: 2px solid lightgray;
+}
+
+.food-title {
+    font-weight: 700;
+    font-family: auto;
+}
+
+.food-price {
+    font-size: 9pt;
+    font-weight: 700;
+    font-family: auto;
+    padding-top: 5px;
+}
+
+.food-description {
+    font-family: auto;
+    font-size: 9.5pt;
+    padding-top: 2pt;
+    color: grey;
+    font-weight: 600;
+}
+
+.food-status {
+    color: red;
+    font-family: auto;
+    font-size: 10.6pt;
+    padding-top: 2pt;
+}
+
+.food-type {
+    width: 20px;
+    height: 20px;
+    margin-right: 5pt;
+}
+
+.food-type img {
+    height: 100%;
+    width: 100%;
+}
+
+.dish-category {
+    width: 20%;
+    color: gray;
+    font-family: auto;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+}
+
+.dish-category.active {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.dish-categories {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10pt;
+}
+
+.food-qty {
+    margin: 5pt 0;
+}
+
+.food-qty span:nth-child(1) {
+    border-radius: 12px 0 0 12px;
+    cursor: pointer;
+}
+
+.food-qty span {
+    color: #fff;
+    background-color: green;
+    padding: 0pt 10pt 3pt 10pt;
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+.food-qty span:nth-child(3) {
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}
+
+.page-name {
+    font-family: auto;
+    font-weight: 700;
+    font-size: 15pt;
+    color: darkslategray;
+}
+
+img.cart-icon {
+    height: 25px;
+}
+
+.page-cart {
+    display: flex;
+    align-items: center;
+}
+
+span.cart-name {
+    font-family: auto;
+    font-size: 10pt;
+    font-weight: 700;
+    color: gray;
+    /* align-items: center; */
+}
+
+span.cart-count {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 10pt;
+    min-width: 15px;
+    font-weight: 600;
+    color: #fff;
+    left: 14px;
+    bottom: 15px;
+    height: 20px;
+    text-align: center;
+    padding: 2px;
+}
+
+.page-cart>span {
+    position: relative;
+}
