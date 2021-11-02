@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import Cart from './components/Cart';
 import FoodCategory from './components/FoodCategory';
 import { DishProvider } from './DishContext';
+import {getList} from './services/service'
 
 
 const Main = () => {
@@ -9,10 +10,7 @@ const Main = () => {
     const [foodCategory, setFoodCategory] = useState([]);
     const [selectedItem, setSelectedItem] = useState('');
     const [selectedCatId, setSelectedCatId] = useState('');
-    const getList = () => {
-        return fetch('https://run.mocky.io/v3/a67edc87-49c7-4822-9cb4-e2ef94cb3099')
-            .then(data => data.json())
-    };
+    
 
     const handleCategory = (category) => {
         setSelectedItem(category.menu_category);
