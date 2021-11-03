@@ -16,7 +16,7 @@ const FoodItem = ({ items }) => {
     return (
         <div className="d-flex mb-10 bb-light-grey">
             <div className="food-type">
-                {items.dish_Type == '2' ? <img src="../images/veg.png" alt="foodtype" /> : <img src="../images/non-veg.png" alt="foodtype" />}
+                {items.dish_Type === '2' ? <img src="../images/veg.png" alt="foodtype" /> : <img src="../images/nonveg.png" alt="foodtype" />}
             </div>
             <div className="food-details">
                 <div className="food-title">
